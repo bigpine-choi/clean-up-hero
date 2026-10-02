@@ -1,2 +1,2 @@
-# clean-up-hero-
+# clean-up-hero
 방치형 모바일 경영시뮬레이터 게임 개발 프로젝트
