@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>용사님, 치우고 가세요! — 청소회사 경영 시제품</title>
+  <style>:root{color-scheme:light;--ink:#263c37;--forest:#173f36;--green:#28785c;--paper:#fcf3dc;--edge:#d2ba85;--gold:#efc875;--muted:#6a7463;--loss:#a13333}
+*{box-sizing:border-box}body{margin:0;background:#14392f;color:var(--ink);font:15px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif;background-image:radial-gradient(ellipse at 50% 0,#315b42,transparent 70%)}button,input{font:inherit}button{cursor:pointer;touch-action:manipulation}button:disabled{cursor:default;opacity:.55}button:focus-visible,input:focus-visible{outline:3px solid #178478;outline-offset:3px}h1,h2,h3,p{margin:0}h1{font-size:20px;letter-spacing:-.8px}h2{font-size:20px;letter-spacing:-.5px}h3{font-size:15px;margin:15px 0 8px}b,strong{font-variant-numeric:tabular-nums}.game{width:min(100%,510px);margin:22px auto 38px;background:#f0e7cc;border:1px solid #bba272;border-radius:24px;overflow:hidden;box-shadow:0 24px 80px #071d2d55}.guild-header{color:#fff2cc;background:linear-gradient(130deg,#244f3d,#163c34);padding:24px 22px 13px;border-bottom:5px solid #b88b47}.brand{display:flex;align-items:center;gap:13px}.crest{display:grid;place-items:center;background:#af833d;color:#fff0bc;width:43px;height:48px;font-size:30px;border-radius:7px 7px 18px 18px}.eyebrow{font-size:10px;letter-spacing:1.7px;font-weight:700}.company-bar{display:flex;justify-content:space-between;gap:10px;margin-top:20px;font-size:13px;color:#dbcba7}.company-bar b{font-size:18px;color:#ffe2a0}.separator{opacity:.6;margin:0 6px}.steps{display:flex;gap:5px;list-style:none;padding:14px 15px;margin:0;border-bottom:1px solid #d6c6a3}.steps li{flex:1;text-align:center;font-size:12px;color:#777464;padding:6px 1px;border-radius:6px}.steps .current{background:#294e3e;color:#fff0c9;font-weight:700}.section-heading{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:22px 20px 15px}.section-heading .eyebrow{color:#7d795a}.stamp{font-size:11px;white-space:nowrap;padding:4px 7px;border:1px solid #b48a55;color:#956a38;border-radius:4px}.contracts{display:grid;gap:10px;margin:0 20px 20px}.contract{background:#faf1da;color:var(--ink);border:1px solid #d1bf98;border-radius:12px;padding:13px 15px;text-align:left;box-shadow:0 3px 0 #d4c6a8}.contract[aria-pressed=true]{border:2px solid #2b7e64;padding:12px 14px;background:#fff8e4}.contract-name{display:flex;justify-content:space-between;gap:8px;font-size:16px;font-weight:700}.contract-name .badge{font-size:11px;font-weight:500;color:#57755d;background:#e3ead5;padding:3px 7px;border-radius:12px}.contract p{font-size:12px;color:var(--muted);margin:4px 0 8px}.contract-money{font-size:12px;display:flex;gap:10px;flex-wrap:wrap}.contract-money strong{color:#816025}.parchment{background:var(--paper);border:1px solid var(--edge);border-radius:14px;margin:0 20px 20px;padding:18px;box-shadow:0 4px 0 #d3c39c}.panel-title{display:flex;justify-content:space-between;align-items:center;gap:8px}.panel-title span{font-size:12px;color:#6c715d}.muted{color:var(--muted)}#workload{font-size:12px;margin-top:7px}.team-allocation{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:16px 0 8px}.staff-role{display:flex;gap:7px;align-items:center;font-size:13px}.staff-icon{display:grid;place-items:center;width:33px;height:33px;border-radius:10px;color:#fff5d5;font-size:20px}.washer{background:#6474a7}.hauler{background:#489e83}input[type=range]{display:block;accent-color:#287b61;width:100%;min-height:44px;margin:0}.range-labels{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-top:-2px}.team-allocation+label{font-size:12px}.equipment{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}.equipment button{border:1px solid #c9ba98;background:#f1e5c7;color:var(--ink);border-radius:8px;padding:10px 3px;min-height:55px;font-size:12px}.equipment button[aria-pressed=true]{background:#365846;color:#fff0cb;border-color:#365846}.equipment small{display:block;font-size:11px;opacity:.85}.forecast{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px;padding-top:13px;border-top:1px solid #d4c9a9}.forecast span{display:block;font-size:12px;color:var(--muted)}.forecast strong{font-size:25px;color:#277155}.forecast div+div strong{font-size:21px;color:#5c614d}.small{font-size:12px;margin-top:7px}#estimate-cause{min-height:37px}.primary{display:block;background:linear-gradient(#367f5c,#246747);color:#fff2ca;border:1px solid #1a583c;border-radius:9px;min-height:49px;width:100%;font-size:15px;font-weight:700;box-shadow:0 3px 0 #204d34;margin-top:14px}.quiet{border:1px solid #b7a67f;background:#f7ebcb;color:var(--ink);border-radius:8px;padding:8px 11px;min-height:44px;font-size:12px;white-space:nowrap}.scene-frame{position:relative;margin:0 20px;overflow:hidden;border-radius:14px;border:3px solid #af8c53;background:#638361}canvas{display:block;width:100%;height:auto}.scene-label{position:absolute;top:12px;left:12px;background:#173e32e6;color:#fff2cb;padding:4px 10px;font-size:12px;border-radius:6px}.live-progress{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin:15px 20px 8px}.live-progress label{display:flex;justify-content:space-between;font-size:12px}progress{display:block;appearance:none;width:100%;height:9px;border:0;border-radius:8px;margin-top:4px;overflow:hidden;background:#d7ccb0}progress::-webkit-progress-bar{background:#d7ccb0}progress::-webkit-progress-value{background:#3d9c7e}progress::-moz-progress-bar{background:#3d9c7e}#haul-progress::-webkit-progress-value{background:#927450}#haul-progress::-moz-progress-bar{background:#927450}.live-stats{display:flex;justify-content:space-between;gap:7px;font-size:11px;margin:12px 20px;flex-wrap:wrap}.status{font-size:13px;padding:11px 13px;margin:12px 20px 18px;background:#e3e7cc;border-radius:8px;color:#456249}.parchment .status{margin:15px 0 0}.result-profit{text-align:center;padding:12px 0 20px}.result-profit span{display:block;font-size:13px;color:var(--muted)}.result-profit strong{display:block;font-size:38px;color:#267252}.negative{color:var(--loss)!important}.ledger{border-top:1px solid #d1c3a3}.ledger div{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid #e4d7b6;font-size:13px}.ledger .sum{font-weight:700}.comparison{font-size:12px;margin-top:15px;display:grid;gap:5px}.comparison div{display:flex;justify-content:space-between;gap:8px}.error{background:#fce7d8;color:#8b3732;border:1px solid #d3a78e;padding:10px 12px;margin:15px 20px;border-radius:8px;font-size:13px}footer{margin:20px;font-size:10px;color:#7c7b66;line-height:1.7}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}[hidden]{display:none!important}@media(max-width:540px){body{background:#f0e7cc}.game{margin:0 auto;border:0;border-radius:0;box-shadow:none}.guild-header{padding:21px 20px 13px}}@media(max-width:350px){h1{font-size:18px}.brand{gap:8px}.company-bar{font-size:11px}.parchment{padding:14px;margin-left:14px;margin-right:14px}.section-heading,.contracts{margin-left:14px;margin-right:14px}.stamp{display:none}.staff-role{font-size:12px}.staff-icon{width:27px;height:27px}.contract-name{font-size:14px}}
+</style>
+</head>
+<body>
+  <main class="game">
+    <header class="guild-header">
+      <div class="brand"><span class="crest" aria-hidden="true">✦</span><div><span class="eyebrow">CLEAN UP, HERO!</span><h1>용사님, 치우고 가세요!</h1></div></div>
+      <div class="company-bar"><span>작은 청소 길드</span><span><b id="company-cash">180</b> G <span class="separator">·</span> 완료 <b id="completed">0</b>건</span></div>
+    </header>
+    <ol class="steps" aria-label="의뢰 진행 단계"><li id="step-board" class="current">의뢰 선택</li><li id="step-team">팀 배치</li><li id="step-work">자동 작업</li><li id="step-report">손익 확인</li></ol>
+    <div id="error" class="error" role="alert" hidden></div>
+
+    <section id="planning">
+      <div class="section-heading"><div><span class="eyebrow">CONTRACT BOARD</span><h2>오늘은 어느 현장으로?</h2></div><span class="stamp">사장의 첫 판단</span></div>
+      <div id="contracts" class="contracts" aria-label="청소 의뢰"></div>
+      <section id="team-panel" class="parchment" aria-labelledby="team-heading">
+        <div class="panel-title"><h2 id="team-heading">출발 준비</h2><span id="selected-name"></span></div>
+        <p id="workload" class="muted"></p>
+        <div class="team-allocation"><div class="staff-role"><span class="staff-icon washer" aria-hidden="true">✦</span><span>세척 직원 <b id="wash-count">2</b>명</span></div><div class="staff-role"><span class="staff-icon hauler" aria-hidden="true">▣</span><span>운반 직원 <b id="haul-count">2</b>명</span></div></div>
+        <label for="team" class="muted">세척 비중 조정 · 직원 총 4명</label><input id="team" type="range" min="1" max="3" value="2" step="1">
+        <div class="range-labels"><span>운반 중심</span><span>세척 중심</span></div>
+        <h3>이번 현장의 임대 장비</h3><div id="equipment" class="equipment"></div><p id="equipment-description" class="small muted"></p>
+        <div class="forecast"><div><span>예상 현장 이익</span><strong id="estimated-profit"></strong></div><div><span>예상 작업 시간</span><strong id="estimated-time"></strong></div></div>
+        <p id="estimate-detail" class="small"></p><p id="estimate-cause" class="small muted"></p>
+        <button id="start" class="primary" type="button">수주하고 출발</button>
+        <p id="funding-note" class="small muted"></p>
+      </section>
+    </section>
+
+    <section id="working" hidden aria-labelledby="working-heading">
+      <div class="section-heading"><div><span class="eyebrow">ON THE JOB</span><h2 id="working-heading"></h2></div><button id="speed" class="quiet" type="button" aria-label="작업 표시 속도 변경">속도 ×1</button></div>
+      <div class="scene-frame"><canvas id="scene" width="720" height="560" role="img" aria-label="직원이 자동 청소하고 폐품을 운반하는 작업 현장">청소 진행과 폐품 적치량은 아래에서 확인할 수 있습니다.</canvas><span class="scene-label" id="scene-label">작업 중</span></div>
+      <div class="live-progress"><div><label for="clean-progress">세척 <b id="clean-percent">0%</b></label><progress id="clean-progress" max="100" value="0"></progress></div><div><label for="haul-progress">운반 <b id="haul-percent">0%</b></label><progress id="haul-progress" max="100" value="0"></progress></div></div>
+      <div class="live-stats"><span>작업 시간 <b id="elapsed">0초</b></span><span>누적 인건비 <b id="live-wages">0 G</b></span><span>폐품 적치 <b id="queue">0</b></span></div>
+      <p id="work-status" class="status" aria-live="polite"></p>
+      <section class="parchment" aria-labelledby="reassign-heading"><h3 id="reassign-heading">현장을 보고 팀을 재배치하세요</h3><div class="team-allocation"><span>세척 <b id="live-wash-count">2</b>명</span><span>운반 <b id="live-haul-count">2</b>명</span></div><label class="sr-only" for="live-team">작업 중 세척 직원 수</label><input id="live-team" type="range" min="1" max="3" step="1" value="2"><div class="range-labels"><span>운반 중심</span><span>세척 중심</span></div><button id="settle" class="primary" type="button" hidden>작업 완료 · 손익 확인</button></section>
+    </section>
+
+    <section id="report" hidden aria-labelledby="report-heading">
+      <div class="section-heading"><div><span class="eyebrow">JOB REPORT</span><h2 id="report-heading">이번 의뢰, 무엇이 남았을까?</h2></div><span class="stamp">정산 완료</span></div>
+      <section class="parchment"><p id="report-name" class="muted"></p><div class="result-profit"><span>현장 이익</span><strong id="actual-profit"></strong></div><div id="report-lines" class="ledger"></div><div id="report-comparison" class="comparison"></div><p id="report-cause" class="status"></p><button id="next" class="primary" type="button">다음 의뢰 고르기</button></section>
+    </section>
+    <footer><p>경영 규칙 시제품 · 표시 수치는 밸런스 검증용입니다.</p><p>저장·오프라인 진행은 아직 제공하지 않습니다. 새로고침하면 새 회사로 시작합니다.</p></footer>
+  </main>
+  <script>
+'use strict';
+// All quantities are disclosed. There are no random accidents in this prototype.
+const WORKERS = 4;
+const RATES = Object.freeze({ clean: 0.9, haul: 0.65, wage: 0.12 });
+const EPSILON = 1e-8;
+
+const CONTRACTS = Object.freeze([
+  Object.freeze({
+    id: 'camp', name: '야영지 정리', summary: '규모가 작은 야영지 현장. 세척과 운반의 균형이 중요합니다.',
+    fee: 82, salvage: 6, totalClean: 96, totalCarry: 72, queueCapacity: 16,
+    supplies: 8, risk: '낮음 · 소모품 8G 선투입', recovery: false,
+  }),
+  Object.freeze({
+    id: 'bath', name: '슬라임 욕탕', summary: '끈적한 얼룩이 대부분입니다. 세척 인력과 세척기를 비교해 보세요.',
+    fee: 100, salvage: 3, totalClean: 270, totalCarry: 30, queueCapacity: 10,
+    supplies: 18, risk: '보통 · 세척 지연 시 임금 증가', recovery: false,
+  }),
+  Object.freeze({
+    id: 'vault', name: '무너진 유물고', summary: '바닥보다 무거운 폐품이 많습니다. 회수품 판매 수입은 확정입니다.',
+    fee: 150, salvage: 32, totalClean: 45, totalCarry: 260, queueCapacity: 24,
+    supplies: 65, risk: '높음 · 65G 선투입, 운반 부족 시 적자 가능', recovery: false,
+  }),
+  Object.freeze({
+    id: 'recovery', name: '길드 앞마당 · 외상 정산', summary: '기본 도구로 맡는 작은 의뢰. 임금은 의뢰비를 받은 뒤 정산합니다.',
+    fee: 28, salvage: 0, totalClean: 40, totalCarry: 25, queueCapacity: 12,
+    supplies: 0, risk: '복구 의뢰 · 선투입 0G, 모든 유효 배치에서 흑자', recovery: true,
+  }),
+]);
+
+const EQUIPMENT = Object.freeze([
+  Object.freeze({ id: 'none', name: '기본 도구', description: '임대료 없음', cost: 0, cleanMultiplier: 1, haulMultiplier: 1 }),
+  Object.freeze({ id: 'cart', name: '운반 수레 임대', description: '이 현장 운반 속도 ×1.8', cost: 24, cleanMultiplier: 1, haulMultiplier: 1.8 }),
+  Object.freeze({ id: 'washer', name: '세척기 임대', description: '이 현장 세척 속도 ×1.7', cost: 12, cleanMultiplier: 1.7, haulMultiplier: 1 }),
+]);
+
+function fail(message, code) {
+  const error = new Error(message);
+  error.code = code;
+  throw error;
+}
+
+function contractFor(id) {
+  const contract = CONTRACTS.find((item) => item.id === id);
+  if (!contract) fail('알 수 없는 의뢰입니다.', 'INVALID_CONTRACT');
+  return contract;
+}
+
+function equipmentFor(id) {
+  const equipment = EQUIPMENT.find((item) => item.id === id);
+  if (!equipment) fail('알 수 없는 장비입니다.', 'INVALID_EQUIPMENT');
+  return equipment;
+}
+
+function validateTeam(team) {
+  if (!team || !Number.isInteger(team.washers) || !Number.isInteger(team.haulers)
+    || team.washers < 1 || team.haulers < 1 || team.washers + team.haulers !== WORKERS) {
+    fail('세척과 운반에 최소 1명씩, 총 4명을 배치해야 합니다.', 'INVALID_TEAM');
+  }
+  return { washers: team.washers, haulers: team.haulers };
+}
+
+function validatePlan(contractId, team, equipmentId) {
+  const contract = contractFor(contractId);
+  const equipment = equipmentFor(equipmentId);
+  const checkedTeam = validateTeam(team);
+  if (contract.recovery && equipment.id !== 'none') {
+    fail('복구 의뢰는 선투입 비용 없는 기본 도구로 진행합니다.', 'RECOVERY_BASIC_TOOLS');
+  }
+  return { contract, equipment, team: checkedTeam };
+}
+
+function createCompany() {
+  return { cash: 180, active: null, lastReport: null, completed: 0 };
+}
+
+function makeActive(contract, team, equipment, startCash) {
+  return {
+    contractId: contract.id, team, equipmentId: equipment.id,
+    elapsed: 0, cleaned: 0, carried: 0, queue: 0, wages: 0,
+    blockedSeconds: 0, done: false, blocked: false, bottleneck: null,
+    estimatedProfit: 0, estimatedDuration: 0, startCash,
+    deferredWages: contract.recovery, reassignments: 0,
+  };
+}
+
+function ratesFor(active, equipment) {
+  return {
+    clean: active.team.washers * RATES.clean * equipment.cleanMultiplier,
+    haul: active.team.haulers * RATES.haul * equipment.haulMultiplier,
+  };
+}
+
+function updateStatus(active, contract, equipment) {
+  active.queue = Math.max(0, active.cleaned * contract.totalCarry / contract.totalClean - active.carried);
+  if (active.cleaned >= contract.totalClean - EPSILON && active.carried >= contract.totalCarry - EPSILON) {
+    active.cleaned = contract.totalClean;
+    active.carried = contract.totalCarry;
+    active.queue = 0;
+    active.done = true;
+    active.blocked = false;
+    active.bottleneck = null;
+    return;
+  }
+  const rates = ratesFor(active, equipment);
+  const generation = rates.clean * contract.totalCarry / contract.totalClean;
+  active.blocked = active.cleaned < contract.totalClean - EPSILON
+    && active.queue >= contract.queueCapacity - EPSILON && generation > rates.haul + EPSILON;
+  active.bottleneck = active.cleaned >= contract.totalClean - EPSILON || generation > rates.haul + EPSILON
+    ? 'haul' : 'clean';
+}
+
+// This is an event-based fluid pipeline: waste is generated by cleaning and hauled
+// concurrently. At a full stockpile, cleaners alternate work and waiting. Their
+// aggregate rate is limited by hauling; blockedSeconds counts equivalent idle
+// time, not the entire time spent working beside a full stockpile.
+// Events are stockpile full/empty, cleaning complete, and hauling complete.
+// The result is independent of the caller's frame rate or chosen time step.
+function advance(company, seconds) {
+  if (!Number.isFinite(seconds) || seconds < 0) fail('진행 시간은 0 이상의 유한수여야 합니다.', 'INVALID_TIME');
+  const active = company.active;
+  if (!active || active.done || seconds === 0) return company;
+  const contract = contractFor(active.contractId);
+  const equipment = equipmentFor(active.equipmentId);
+  const rates = ratesFor(active, equipment);
+  const ratio = contract.totalCarry / contract.totalClean;
+  const generation = rates.clean * ratio;
+  let remaining = seconds;
+
+  while (remaining > EPSILON && !active.done) {
+    updateStatus(active, contract, equipment);
+    if (active.done) break;
+    let duration;
+    let cleanRate = rates.clean;
+    let carryRate = rates.haul;
+    let idleFraction = 0;
+    if (active.cleaned >= contract.totalClean - EPSILON) {
+      cleanRate = 0;
+      duration = Math.min(remaining, (contract.totalCarry - active.carried) / rates.haul);
+    } else if (active.blocked) {
+      cleanRate = rates.haul / ratio;
+      idleFraction = 1 - cleanRate / rates.clean;
+      duration = Math.min(remaining, (contract.totalClean - active.cleaned) / cleanRate);
+    } else {
+      duration = Math.min(remaining, (contract.totalClean - active.cleaned) / rates.clean);
+      if (generation > rates.haul + EPSILON) {
+        duration = Math.min(duration, (contract.queueCapacity - active.queue) / (generation - rates.haul));
+      } else if (generation < rates.haul - EPSILON && active.queue > EPSILON) {
+        duration = Math.min(duration, active.queue / (rates.haul - generation));
+      } else if (active.queue <= EPSILON) {
+        carryRate = Math.min(rates.haul, generation);
+      }
+    }
+    if (duration <= 0) fail('작업 진행 이벤트 계산에 실패했습니다.', 'SIMULATION_ERROR');
+    active.cleaned = Math.min(contract.totalClean, active.cleaned + cleanRate * duration);
+    active.carried = Math.min(contract.totalCarry, active.carried + carryRate * duration);
+    active.elapsed += duration;
+    const wage = WORKERS * RATES.wage * duration;
+    active.wages += wage;
+    active.blockedSeconds += idleFraction * duration;
+    if (!active.deferredWages) company.cash -= wage;
+    remaining -= duration;
+    updateStatus(active, contract, equipment);
+  }
+  return company;
+}
+
+function reportFor(active) {
+  const contract = contractFor(active.contractId);
+  const equipment = equipmentFor(active.equipmentId);
+  const profit = contract.fee + contract.salvage - contract.supplies - equipment.cost - active.wages;
+  let cause;
+  if (contract.recovery) {
+    cause = '선투입 없이 의뢰비 수령 후 임금을 정산했습니다.';
+  } else if (active.blockedSeconds > 1) {
+    cause = `운반 적체에 따른 세척 대기 약 ${active.blockedSeconds.toFixed(1)}초(대기 비율을 시간으로 환산). 인건비가 손익에 반영됐습니다.`;
+  } else {
+    cause = '폐품 적체 없이 작업했습니다. 작업 시간과 현장 임대료가 손익에 반영됐습니다.';
+  }
+  return {
+    contractId: contract.id, contractName: contract.name,
+    fee: contract.fee, salvage: contract.salvage, wages: active.wages,
+    supplies: contract.supplies, equipmentCost: equipment.cost,
+    totalCost: contract.supplies + equipment.cost + active.wages,
+    revenue: contract.fee + contract.salvage, profit, duration: active.elapsed,
+    blockedSeconds: active.blockedSeconds, cause,
+    estimatedProfit: active.estimatedProfit, estimatedDuration: active.estimatedDuration,
+    startCash: active.startCash, finalTeam: { ...active.team },
+    equipmentId: equipment.id, reassignments: active.reassignments,
+  };
+}
+
+function estimate(contractId, team, equipmentId = 'none') {
+  const plan = validatePlan(contractId, team, equipmentId);
+  const simulation = createCompany();
+  simulation.active = makeActive(plan.contract, plan.team, plan.equipment, 0);
+  advance(simulation, 1_000_000);
+  const report = reportFor(simulation.active);
+  report.estimatedProfit = report.profit;
+  report.estimatedDuration = report.duration;
+  return report;
+}
+
+function startJob(company, contractId, team, equipmentId = 'none') {
+  if (company.active) fail('현재 의뢰를 정산한 뒤 다음 의뢰를 시작할 수 있습니다.', 'JOB_ACTIVE');
+  if (!Number.isFinite(company.cash)) fail('회사 잔고가 올바르지 않습니다.', 'INVALID_COMPANY');
+  const plan = validatePlan(contractId, team, equipmentId);
+  const expected = estimate(contractId, team, equipmentId);
+  if (!plan.contract.recovery && company.cash + EPSILON < expected.totalCost) {
+    fail(`예상 비용 ${expected.totalCost.toFixed(1)}G를 충당할 잔고가 부족합니다. 기본 도구·외상 정산 의뢰로 복구할 수 있습니다.`, 'INSUFFICIENT_FUNDS');
+  }
+  company.active = makeActive(plan.contract, plan.team, plan.equipment, company.cash);
+  company.active.estimatedProfit = expected.profit;
+  company.active.estimatedDuration = expected.duration;
+  company.cash -= plan.contract.supplies + plan.equipment.cost;
+  updateStatus(company.active, plan.contract, plan.equipment);
+  return company;
+}
+
+function reassign(company, team) {
+  if (!company.active || company.active.done) fail('작업 중에만 인력을 재배치할 수 있습니다.', 'NO_RUNNING_JOB');
+  const checked = validateTeam(team);
+  if (checked.washers !== company.active.team.washers || checked.haulers !== company.active.team.haulers) {
+    company.active.team = checked;
+    company.active.reassignments += 1;
+  }
+  updateStatus(company.active, contractFor(company.active.contractId), equipmentFor(company.active.equipmentId));
+  return company;
+}
+
+function settle(company) {
+  if (!company.active) fail('정산할 의뢰가 없습니다.', 'NO_JOB');
+  if (!company.active.done) fail('세척과 운반을 모두 끝낸 뒤 정산할 수 있습니다.', 'JOB_INCOMPLETE');
+  const report = reportFor(company.active);
+  company.cash += report.revenue - (company.active.deferredWages ? report.wages : 0);
+  report.endCash = company.cash;
+  company.lastReport = report;
+  company.completed += 1;
+  company.active = null;
+  return company;
+}
+
+
+const $ = id => document.getElementById(id);
+const company = createCompany();
+let contractId = CONTRACTS.find(c => !c.recovery).id;
+let equipmentId = 'none';
+let team = { washers: 2, haulers: 2 };
+let speed = 1;
+let lastWall = performance.now();
+let view = 'planning';
+const gold = value => `${Math.round(value).toLocaleString('ko-KR')} G`;
+const signedGold = value => `${value >= 0 ? '+' : '−'}${gold(Math.abs(value))}`;
+const seconds = value => `${Math.round(value)}초`;
+const contract = id => CONTRACTS.find(c => c.id === id);
+
+function error(message = '') {
+  $('error').textContent = message;
+  $('error').hidden = !message;
+}
+
+function showView(nextView) {
+  view = nextView;
+  for (const id of ['planning', 'working', 'report']) $(id).hidden = id !== nextView;
+  for (const id of ['board', 'team', 'work', 'report']) $(`step-${id}`).classList.remove('current');
+  const step = nextView === 'planning' ? 'team' : nextView === 'working' ? 'work' : 'report';
+  $(`step-${step}`).classList.add('current');
+  if (nextView === 'planning') $('step-board').classList.add('current');
+  updateCompany();
+}
+
+function updateCompany() {
+  $('company-cash').textContent = Math.round(company.cash).toLocaleString('ko-KR');
+  $('company-cash').classList.toggle('negative', company.cash < 0);
+  $('completed').textContent = company.completed;
+}
+
+function renderContracts() {
+  $('contracts').replaceChildren();
+  for (const c of CONTRACTS) {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'contract';
+    button.dataset.contract = c.id;
+    button.setAttribute('aria-pressed', String(c.id === contractId));
+    button.innerHTML = `<span class="contract-name"><span>${c.name}</span><span class="badge">${c.recovery ? '자금 복구' : c.risk.split(' · ')[0]}</span></span><p>${c.summary}</p><span class="contract-money"><span>청소 보수 <strong>${gold(c.fee)}</strong></span><span>회수품 매각 <strong>${gold(c.salvage)}</strong></span></span><p>${c.risk}</p>`;
+    button.addEventListener('click', () => {
+      contractId = c.id;
+      if (c.recovery) equipmentId = 'none';
+      error();
+      renderPlanning();
+    });
+    $('contracts').append(button);
+  }
+}
+
+function renderEquipment() {
+  $('equipment').replaceChildren();
+  for (const item of EQUIPMENT) {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.dataset.equipment = item.id;
+    button.setAttribute('aria-pressed', String(item.id === equipmentId));
+    button.innerHTML = `${item.name}<small>${item.cost ? `${gold(item.cost)} / 현장` : '임대료 없음'}</small>`;
+    button.title = item.description;
+    button.disabled = contract(contractId).recovery && item.id !== 'none';
+    button.addEventListener('click', () => { equipmentId = item.id; renderPlanning(); });
+    $('equipment').append(button);
+  }
+}
+
+function renderPlanning() {
+  updateCompany();
+  const c = contract(contractId);
+  renderContracts();
+  renderEquipment();
+  $('equipment-description').textContent = EQUIPMENT.find(e => e.id === equipmentId).description;
+  $('selected-name').textContent = c.name;
+  $('workload').textContent = `세척 물량 ${c.totalClean} · 운반 물량 ${c.totalCarry} · 적치 한도 ${c.queueCapacity}`;
+  $('wash-count').textContent = team.washers;
+  $('haul-count').textContent = team.haulers;
+  $('team').value = team.washers;
+  const quote = estimate(contractId, team, equipmentId);
+  $('estimated-profit').textContent = signedGold(quote.profit);
+  $('estimated-profit').classList.toggle('negative', quote.profit < 0);
+  $('estimated-time').textContent = seconds(quote.duration);
+  $('estimate-detail').textContent = `매출 ${gold(quote.fee + quote.salvage)} − 인건비 ${gold(quote.wages)} − 소모품 ${gold(quote.supplies)} − 장비 임대 ${gold(quote.equipmentCost)}`;
+  $('estimate-cause').textContent = quote.cause;
+  const blocked = !c.recovery && company.cash < quote.totalCost;
+  $('start').disabled = blocked;
+  $('start').textContent = blocked ? '운영자금 부족' : '수주하고 출발';
+  $('funding-note').textContent = c.recovery
+    ? '기본 도구로 진행합니다. 선지급 비용 없이 완료 후 임금을 정산합니다.'
+    : blocked
+      ? `필요 운영자금 ${gold(quote.totalCost)}. 장비·배치를 바꾸거나 자금 복구 의뢰를 선택하세요.`
+      : `필요 운영자금 ${gold(quote.totalCost)} · 수주 후 작업 시간에만 인건비가 발생합니다.`;
+}
+
+$('team').addEventListener('input', event => {
+  team = { washers: Number(event.target.value), haulers: 4 - Number(event.target.value) };
+  renderPlanning();
+});
+
+$('start').addEventListener('click', () => {
+  try {
+    startJob(company, contractId, team, equipmentId);
+    error();
+    speed = 1;
+    $('speed').textContent = '속도 ×1';
+    lastWall = performance.now();
+    $('working-heading').textContent = contract(contractId).name;
+    $('live-team').disabled = false;
+    showView('working');
+    updateWork();
+  } catch (e) { error(e.message); }
+});
+
+$('live-team').addEventListener('input', event => {
+  try {
+    const washers = Number(event.target.value);
+    reassign(company, { washers, haulers: 4 - washers });
+    error();
+    updateWork();
+  } catch (e) { error(e.message); updateWork(); }
+});
+
+$('speed').addEventListener('click', () => {
+  speed = speed === 1 ? 4 : 1;
+  $('speed').textContent = `속도 ×${speed}`;
+});
+
+function updateWork() {
+  const job = company.active;
+  if (!job) return;
+  const c = contract(job.contractId);
+  const cleanPercent = Math.min(100, job.cleaned / c.totalClean * 100);
+  const haulPercent = Math.min(100, job.carried / c.totalCarry * 100);
+  $('clean-percent').textContent = `${Math.round(cleanPercent)}%`;
+  $('haul-percent').textContent = `${Math.round(haulPercent)}%`;
+  $('clean-progress').value = cleanPercent;
+  $('haul-progress').value = haulPercent;
+  $('elapsed').textContent = seconds(job.elapsed);
+  $('live-wages').textContent = gold(job.wages);
+  $('queue').textContent = `${Math.round(job.queue)} / ${c.queueCapacity}`;
+  $('live-wash-count').textContent = job.team.washers;
+  $('live-haul-count').textContent = job.team.haulers;
+  $('live-team').value = job.team.washers;
+  $('live-team').disabled = job.done;
+  $('settle').hidden = !job.done;
+  $('scene-label').textContent = job.done ? '청소 완료!' : job.cleaned >= c.totalClean ? '남은 폐품 운반 중' : job.blocked ? '적치 공간이 가득 찼어요' : '직원들이 작업 중';
+  $('work-status').textContent = job.done
+    ? '깨끗해진 현장입니다. 비용은 더 발생하지 않습니다. 이번 판단의 결과를 확인하세요.'
+    : job.cleaned >= c.totalClean
+      ? '세척은 끝났습니다. 남은 폐품을 운반하고 있습니다.'
+      : job.blocked
+        ? '적치 공간이 가득 차 세척 속도가 운반 속도에 맞춰 줄었습니다. 운반 인력 비중을 높여보세요.'
+        : '세척과 운반이 이어지고 있습니다. 적치량과 작업 흐름을 살펴보세요.';
+  updateCompany();
+  drawScene(job, c);
+}
+
+$('settle').addEventListener('click', () => {
+  try { settle(company); renderReport(); showView('report'); error(); }
+  catch (e) { error(e.message); }
+});
+
+function renderReport() {
+  const r = company.lastReport;
+  $('report-name').textContent = contract(contractId).name;
+  $('actual-profit').textContent = signedGold(r.profit);
+  $('actual-profit').classList.toggle('negative', r.profit < 0);
+  const lines = [['청소 보수', r.fee], ['회수품 매각', r.salvage], ['인건비', -r.wages], ['소모품비', -r.supplies], ['장비 임대료', -r.equipmentCost]];
+  $('report-lines').replaceChildren();
+  for (const [label, amount] of lines) {
+    const row = document.createElement('div');
+    row.innerHTML = `<span>${label}</span><strong>${signedGold(amount)}</strong>`;
+    $('report-lines').append(row);
+  }
+  $('report-comparison').innerHTML = `<div><span>예상 → 실제 이익</span><b>${signedGold(r.estimatedProfit)} → ${signedGold(r.profit)}</b></div><div><span>예상 → 실제 작업 시간</span><b>${seconds(r.estimatedDuration)} → ${seconds(r.duration)}</b></div><div><span>세척 대기 시간 · 비율 환산</span><b>${seconds(r.blockedSeconds)}</b></div>`;
+  $('report-cause').textContent = r.cause;
+}
+
+$('next').addEventListener('click', () => {
+  if (company.cash < 0) { contractId = CONTRACTS.find(c => c.recovery).id; equipmentId = 'none'; }
+  renderPlanning();
+  showView('planning');
+});
+
+// Placeholder art keeps gameplay readable without treating concept PNGs as production sprites.
+function drawScene(job, c) {
+  const ctx = $('scene').getContext('2d');
+  const t = matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : job.elapsed;
+  const ratio = job.cleaned / c.totalClean;
+  ctx.clearRect(0, 0, 720, 560);
+  ctx.fillStyle = '#60865c'; ctx.fillRect(0, 0, 720, 560);
+  for (let i = 0; i < 12; i++) {
+    const x = i * 69 - 14, y = i % 2 ? 34 : 54;
+    ctx.fillStyle = '#355d42'; ctx.beginPath(); ctx.ellipse(x, y, 48, 60, 0, 0, Math.PI * 2); ctx.fill();
+    ctx.fillStyle = '#467448'; ctx.beginPath(); ctx.ellipse(x + 10, y - 12, 39, 40, 0, 0, Math.PI * 2); ctx.fill();
+  }
+  ctx.fillStyle = '#6d704d'; ctx.fillRect(62, 117, 593, 378);
+  ctx.fillStyle = '#b39563'; ctx.fillRect(72, 127, 573, 358);
+  for (let row = 0; row < 6; row++) for (let col = 0; col < 10; col++) {
+    const i = row * 10 + col, x = 82 + col * 55, y = 138 + row * 55;
+    ctx.fillStyle = (row + col) % 2 ? '#d9cb9e' : '#e5d9b2';
+    ctx.fillRect(x, y, 52, 52);
+    const remaining = Math.max(0, Math.min(1, i + 1 - ratio * 60));
+    if (remaining > 0) {
+      ctx.globalAlpha = remaining; ctx.fillStyle = c.totalClean > c.totalCarry * 2 ? '#816895' : '#756944';
+      ctx.beginPath(); ctx.ellipse(x + 26, y + 23, 19 + i % 8, 10 + i % 6, i * .7, 0, Math.PI * 2); ctx.fill();
+      if (i % 3 === 0) { ctx.fillStyle = '#957d54'; ctx.fillRect(x + 6, y + 15, 24, 12); }
+      ctx.globalAlpha = 1;
+    }
+  }
+  ctx.fillStyle = '#456a57'; ctx.beginPath(); ctx.ellipse(363, 306, 32, 25, 0, 0, Math.PI * 2); ctx.fill();
+  ctx.strokeStyle = '#bfb784'; ctx.lineWidth = 4; ctx.beginPath(); ctx.moveTo(363, 285); ctx.lineTo(363, 327); ctx.moveTo(338, 306); ctx.lineTo(388, 306); ctx.stroke();
+  ctx.fillStyle = '#87643e'; ctx.fillRect(575, 417, 100, 72);
+  ctx.fillStyle = '#bb985b'; ctx.fillRect(569, 411, 112, 10);
+  ctx.fillStyle = '#2d4a39'; ctx.beginPath(); ctx.arc(589, 488, 13, 0, Math.PI * 2); ctx.arc(656, 488, 13, 0, Math.PI * 2); ctx.fill();
+  const pile = Math.ceil(job.queue / c.queueCapacity * 8);
+  for (let i = 0; i < pile; i++) { ctx.fillStyle = i % 2 ? '#826550' : '#a58a63'; ctx.fillRect(558 + (i % 4) * 25, 408 - Math.floor(i / 4) * 24, 28, 25); }
+  for (let i = 0; i < 4; i++) {
+    const washing = i < job.team.washers;
+    const x = job.done ? 225 + i * 66 : washing ? 155 + (i * 129 + t * 10) % 350 : 465 + Math.sin(t * .5 + i) * 65;
+    const y = job.done ? 356 : washing ? 213 + i * 52 + Math.sin(t * .8 + i) * 18 : 352 + Math.cos(t * .5 + i) * 36;
+    ctx.fillStyle = '#27403235'; ctx.beginPath(); ctx.ellipse(x, y + 25, 24, 10, 0, 0, Math.PI * 2); ctx.fill();
+    if (washing) {
+      ctx.fillStyle = '#48999a'; ctx.beginPath(); ctx.moveTo(x, y - 14); ctx.lineTo(x - 19, y + 22); ctx.lineTo(x + 21, y + 22); ctx.closePath(); ctx.fill();
+      ctx.fillStyle = '#edd4a3'; ctx.beginPath(); ctx.arc(x, y - 14, 13, 0, Math.PI * 2); ctx.fill();
+      ctx.fillStyle = '#745791'; ctx.beginPath(); ctx.moveTo(x - 19, y - 25); ctx.lineTo(x + 15, y - 25); ctx.lineTo(x + 5, y - 51); ctx.closePath(); ctx.fill();
+      ctx.strokeStyle = '#cdbf78'; ctx.lineWidth = 4; ctx.beginPath(); ctx.moveTo(x + 10, y + 8); ctx.lineTo(x + 39, y + 2 + Math.sin(t * 4) * 5); ctx.stroke();
+      if (!job.done) { ctx.fillStyle = '#a2ecdd'; ctx.beginPath(); ctx.arc(x + 38, y + 6, 7 + Math.sin(t * 4) * 2, 0, Math.PI * 2); ctx.fill(); }
+    } else {
+      ctx.fillStyle = '#54b39b'; ctx.beginPath(); ctx.ellipse(x, y, 26, 25, 0, 0, Math.PI * 2); ctx.fill();
+      ctx.fillStyle = '#81d2b9'; ctx.beginPath(); ctx.ellipse(x - 7, y - 8, 14, 10, -.4, 0, Math.PI * 2); ctx.fill();
+      if (!job.done && job.queue > 0) { ctx.fillStyle = '#bd955f'; ctx.fillRect(x + 15, y - 9, 24, 23); }
+    }
+    ctx.fillStyle = '#263d39'; ctx.beginPath(); ctx.arc(x - 5, y - (washing ? 15 : 4), 2.5, 0, Math.PI * 2); ctx.arc(x + 5, y - (washing ? 15 : 4), 2.5, 0, Math.PI * 2); ctx.fill();
+  }
+}
+
+setInterval(() => {
+  const now = performance.now();
+  const dt = Math.min((now - lastWall) / 1000, 1);
+  lastWall = now;
+  if (view === 'working' && company.active && !company.active.done && !document.hidden) {
+    advance(company, dt * speed);
+    updateWork();
+  }
+}, 250);
+
+renderPlanning();
+showView('planning');
+
+</script>
+</body>
+</html>
